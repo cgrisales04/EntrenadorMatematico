@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contenedor{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor-items{
+    width: 600px;
+    height: 350px;
+    border: 2px solid rgb(96, 139, 168);
+    border-radius: 100px 0 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 98, 163, 0.2);
+}
+
+.contenedor-items-perdiste{
+    width: 600px;
+    height: 350px;
+    border: 2px solid rgb(168, 96, 96);
+    border-radius: 100px 0 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(163, 0, 0, 0.2);
+}
+.contenedor-items-perdiste h1{
+    color: rgba(163, 0, 0, 0.685);
+}
+.info-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btnComenzar{
+    background: rgba(163, 0, 0, 0.685);
+    font-weight: bold;
+    width: 200px;
+}
+
+.vidas{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.vidas .iconos-vidas{
+    padding-right: 30px;
+}
+
+.vidas p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: rgb(0, 98, 163);
+}
+
+.iconos-vidas svg{
+    font-size: 30px;
+    color: rgb(165, 0, 0);
+    text-align: end;
+}
+
+h1{
+    margin: 0;
+    color: rgb(0, 98, 163);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.lblRespuesta{
+    margin: 10px 0;
+}
+
+.formulario input{
+    position: relative;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    width: 140px;
+    height: 15px;
+    background: rgb(0, 98, 163);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    background: rgb(0, 98, 163);
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#lblRespuesta span{
+    color: rgb(0, 98, 163);
+    font-size: 25px;
+    background: white;
+    font-weight: bold;
+    border-radius: 15px 0 15px 15px;
+    padding: 5px;
+    box-shadow: inset 10px 10px 10px #2773a575;
+}
+
+.ocultar{
+    display: none;
+}

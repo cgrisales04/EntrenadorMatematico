@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Entrenador matematico</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor-items">
+            <div class="vidas">
+                <div class="iconos-vidas">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <div class="info-datos">
+                <h1 id="lblPregunta">¿Cuanto es 8x2?</h1>
+                <p id="temporizador"><i class="far fa-clock"></i><span id="tiempo"> 00:10</span></p>
+                <p class="lblRespuesta">La respuesta correcta es: <span id="lblRespuesta"></span></p>
+                <div class="formulario">
+                    <input type="number" id="txtRespuesta" placeholder="Numero">
+                    <button id="btnResponder">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-items-perdiste ocultar">
+            <div class="info-datos">
+                <h1>¡Haz perdido todas las vidas!</h1>
+                <div class="iconos-vidas">
+                    <i class="fas fa-heart-broken"></i>
+                    <i class="fas fa-heart-broken"></i>
+                    <i class="fas fa-heart-broken"></i>
+                </div><br>
+                <button id="btnComenzar">Jugar de nuevo</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
