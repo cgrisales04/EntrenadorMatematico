@@ -66,6 +66,7 @@ body{
 
 .iconos-vidas svg{
     font-size: 30px;
+    transition: opacity 1s ease-out;
     color: rgb(165, 0, 0);
     text-align: end;
 }
@@ -79,10 +80,6 @@ h1{
 p{
     margin: 0;
     font-size: 20px;
-}
-
-.lblRespuesta{
-    margin: 10px 0;
 }
 
 .formulario input{
@@ -126,16 +123,18 @@ button{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#lblRespuesta span{
-    color: rgb(0, 98, 163);
+.lblRespuesta{
     font-size: 25px;
-    background: white;
     font-weight: bold;
-    border-radius: 15px 0 15px 15px;
-    padding: 5px;
-    box-shadow: inset 10px 10px 10px #2773a575;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    margin: 10px 0;
 }
 
 .ocultar{
     display: none;
+}
+
+.opacityOcultar{
+    opacity: 0;
 }

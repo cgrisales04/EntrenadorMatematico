@@ -1,6 +1,7 @@
 const lblPregunta = document.getElementById('lblPregunta');
 const tiempo = document.getElementById('tiempo');
 const lblRespuesta = document.getElementById('lblRespuesta');
+const lblRespuestaClas = document.getElementsByClassName('lblRespuesta');
 const txtRespuesta = document.getElementById('txtRespuesta');
 const btnResponder = document.getElementById('btnResponder');
 const listHeart = document.getElementsByClassName('iconos-vidas')[0];
@@ -39,7 +40,7 @@ function generarNumeroAleatorio() {
     let numero1 = Math.floor(Math.random() * (12 - 1 + 1));
     let numero2 = Math.floor(Math.random() * (12 - 1 + 1));
     let operacion = Math.floor(Math.random() * (4 - 1 + 1));
-
+    
     switch (operacion) {
         case 0:
             lblPregunta.innerText = `¿Cuanto es ${numero1}+${numero2}?`;
@@ -69,7 +70,12 @@ function generarNumeroAleatorio() {
 
 function validarRespuesta(){
     if (+txtRespuesta.value === +respuesta) {
-        lblRespuesta.innerText = respuesta;
+        lblRespuesta.style.color = 'rgb(0, 163, 100)';
+        setTimeout(() => {
+            lblRespuestaClas[0].classList.add('opacityOcultar');
+        }, 1000);
+        lblRespuestaClas[0].classList.remove('opacityOcultar');
+        lblRespuesta.innerText = '¡Respuesta correcta!';
         txtRespuesta.value = '';
         seconds = 10;
         stopInterval();
@@ -79,6 +85,12 @@ function validarRespuesta(){
             txtRespuesta.style.left = `5px`;
         }, 50);
         txtRespuesta.style.right = `5px`;
+        lblRespuesta.style.color = 'rgb(163, 0, 0)';
+        setTimeout(() => {
+            lblRespuestaClas[0].classList.add('opacityOcultar');
+        }, 1000);
+        lblRespuestaClas[0].classList.remove('opacityOcultar');
+        lblRespuesta.innerText = '¡Respuesta incorrecta!';
 
         txtRespuesta.style.left = `0px`;
         txtRespuesta.style.right = `0px`;
