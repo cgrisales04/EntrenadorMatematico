@@ -82,6 +82,7 @@ function validarRespuesta(){
 
         txtRespuesta.style.left = `0px`;
         txtRespuesta.style.right = `0px`;
+        txtRespuesta.value = '';
     }
 }
 
